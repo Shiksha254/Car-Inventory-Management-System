@@ -1,0 +1,12 @@
+{% extends 'CRUD/home.html' %}
+
+{% block content %}
+<div class="update-container">
+    <h2>Update Car Information</h2>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Update</button>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,213 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Set your desired font family */
+    background-image: url('/static/CRUD/car.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar {
+    text-decoration: none;
+    padding-top: 0;
+    margin-top: 0; /* Ensure no gap between navbar and top of body */
+    background-color: rgb(20, 20, 21);
+    height: 60px;
+}
+.navbar-item h2 {
+    font-family: cursive;
+}
+.navbar-item:hover{
+    background-color: gray; /* Change background color on hover */
+    cursor: pointer;
+    border-radius: 5px;
+}
+.navbar-items {
+    list-style-type: none;
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    height: 100%; /* Fill the entire height of the navbar */
+    
+}
+
+.navbar-item {
+    margin-right: 20px;
+}
+
+.navbar-item a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Set the color of the links */
+}
+
+.heading {
+    text-align: center; /* Center the text horizontally */
+    margin-top: 20px;
+    color: white; /* Adjust the margin as needed for vertical centering */
+}
+
+.car-list {
+    margin-top: 40px;
+    margin-left: 50px;
+}
+.car-item {
+    display: flex;
+    margin-left: 125px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.car-details {
+    background-color:  #3498db;
+    width: 400px;
+    height: 300px;
+    text-align: center;
+    margin-top: 1px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.car-image {
+    margin-left: 20px; /* Adjust margin as needed */
+}
+
+/* Optional: Style for the details */
+.car-details h2,
+.car-details h4 {
+    margin-top: 50px;
+    font-family: cursive;
+    color: #333; /* Adjust text color as needed */
+}
+
+.car-details button {
+    background-color: #007bff; /* Adjust button color as needed */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.car-details button:hover {
+    background-color: #0056b3; /* Adjust hover color as needed */
+}
+
+/* Optional: Style for the image */
+.car-image img {
+    width: auto;
+    height: 300px;
+    border-radius: 5px; /* Optional: Add border radius */
+}
+
+.add-car-form {
+    text-align: center; /* Center align content horizontally */
+    align-items: center;
+    color: white;
+    font-family: cursive;
+}
+
+.form-container {
+    text-align: center; /* Center align content horizontally */
+    align-items: center; /* Center align content vertically */
+    background-color: rgb(58, 69, 184); /* Light blue background */
+    width: 700px;
+    height: 450px;
+    margin: 0 auto; /* Center align the container horizontally */
+}
+
+.form-row {
+    padding-top: 8px;
+    display: flex;
+    justify-content: center; /* Center align content horizontally */
+    align-items: center; /* Center align content vertically */
+    margin-top: 20px; /* Adjust spacing between rows */
+}
+
+.form-label:hover {
+    background-color: gray; /* Change background color on hover */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.form-label {
+    color: white; /* White text color */
+}
+
+.form-field:hover {
+    background-color: gray; /* Change background color on hover */
+    cursor: pointer; 
+}
+
+.form-field {
+    color: white; /* White text color */
+}
+
+button[type="submit"] {
+    color: rgba(20, 22, 21, 0.83);
+    font-family: cursive;
+}
+button:hover {
+    background-color: gray; /* Change background color on hover */
+    cursor: pointer; 
+}
+
+.car-details button {
+    color: white;
+    border-radius: 5px;
+}
+
+
+.car-details-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    margin-top: 30px;
+    
+}
+
+.car-details1 {
+    background-color: #3498db; /* Blue background color */
+    padding: 10px; /* Add padding for spacing */
+    border-radius: 10px; /* Add border radius for rounded corners */
+}
+
+.car-details1 h2 {
+    color: white; /* Text color for heading */
+}
+
+.car-info {
+    margin-bottom: 20px; /* Add bottom margin for spacing */
+}
+
+.car-info p {
+    color: white; /* Text color for car info */
+}
+
+.car-image img {
+    display: block; /* Ensure the image is displayed as a block element */
+    margin: 0 auto; /* Center the image horizontally */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a shadow effect */
+}
+
+.update-container {
+    display: flex;
+    flex-direction: column; /* Display items in a column */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    height: 500px; /* Set container height to full viewport height */
+    width: 550px; /* Set container width to full viewport width */
+    margin-top: 5px;
+    background-color: #007bff;
+    margin-left: 500px;
+    font-family: cursive;
+    color: white;
+    padding-left: 35px;
+}
+
+.button {
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+}

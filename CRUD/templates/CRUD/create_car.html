@@ -1,0 +1,43 @@
+<!-- create_car.html -->
+{% extends 'CRUD/home.html' %}
+
+{% block content %}
+<div class="add-car-form">
+    <h2>Add New Car</h2>
+    <form method="POST" action="{% url 'create_car' %}" enctype="multipart/form-data">
+        {% csrf_token %}
+        
+        <div class="form-container">
+            <div class="form-row">
+                <label class="form-label" for="car_name">Car Name:</label>
+                <div class="form-field">{{ form.car_name }}</div>
+            </div>
+        
+            <div class="form-row">
+                <label class="form-label" for="car_model">Car Model:</label>
+                <div class="form-field">{{ form.car_model }}</div>
+            </div>
+        
+            <div class="form-row">
+                <label class="form-label" for="car_price">Car Price:</label>
+                <div class="form-field">{{ form.car_price }}</div>
+            </div>
+
+            <div class="form-row">
+                <label class="form-label" for="car_details">car_details:</label>
+                <div class="form-field">{{ form.car_details }}</div>
+            </div>
+        
+            <div class="form-row">
+                <label class="form-label" for="car_image">Car Image:</label>
+                <div class="form-field">{{ form.car_image }}</div>
+            </div>
+        
+            <div class="form-row">
+                <button type="submit">Add Car</button>
+            </div>
+        </div>        
+        
+    </form>
+</div>
+{% endblock %}
